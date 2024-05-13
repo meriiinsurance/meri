@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
+import DownloadShow from './DownloadShow';
+import Team from './Team';
+import DisplayTeam from './DisplayTeam';
 import reportWebVitals from './reportWebVitals';
+import Sms from './Sms';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <DownloadShow />
+    <Team />
+    <DisplayTeam />
     <App />
+    <Sms />
   </React.StrictMode>
 );
 
