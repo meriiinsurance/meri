@@ -91,9 +91,9 @@ const Sms = () => {
         let givenDay = new Date(item.endingDate);
         let timeDifference = givenDay - today;
         let daysDifference = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
-        // if (daysDifference == 1) {
-        //   sendSMS(item.name, item.phoneNumber, daysDifference)
-        // }
+        if (daysDifference == 1) {
+          sendSMS(item.name, item.phoneNumber, daysDifference)
+        }
       })
 
     }, [data])
